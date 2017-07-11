@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function(){
   var icecreams = ["vanilla", "strawberry", "Pralines & cream", "chocolate peanut butter"];
 
-  icecreams.forEach(function(icecream) {
-    $("ul").append("<li>"+icecream+"</li>");
-  });
+  for (var index = 0; index < icecreams.length; index += 1){
+    $("ul").append("<li>" + icecreams[index] + "</li>");
+  }
 
 });
